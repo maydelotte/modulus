@@ -103,7 +103,7 @@ var app = new Vue({
   methods: {
     getModulo() {
       let self = this;
-      url = "http://localhost:3000/modulo?x=" + this.modulo_x + "&n=" + this.modulo_n;
+      url = "http://3.16.91.215:4201/modulo?x=" + this.modulo_x + "&n=" + this.modulo_n;
       console.log("Calling: " + url);
       fetch(url)
         .then(function(response) {
@@ -115,7 +115,7 @@ var app = new Vue({
     },
     getModexp() {
       let self = this;
-      url = "http://localhost:3000/modexp?x=" + this.modexp_x
+      url = "http://3.16.91.215:4201/modexp?x=" + this.modexp_x
               + "&e=" + this.modexp_e +"&n=" + this.modexp_n;
       console.log("Calling: " + url);
       fetch(url)
@@ -128,7 +128,7 @@ var app = new Vue({
     },
     getModinv() {
       let self = this;
-      url = "http://localhost:3000/modinv?x=" + this.modinv_x + "&n=" + this.modinv_n;
+      url = "http://3.16.91.215:4201/modinv?x=" + this.modinv_x + "&n=" + this.modinv_n;
       console.log("Calling: " + url);
       fetch(url)
         .then(function(response) {
